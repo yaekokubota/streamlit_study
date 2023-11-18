@@ -1,6 +1,6 @@
 import streamlit as st
-import seaborn as sns
-
-df = sns.load_dataset('penguins')
-st.header('Penguins')
-st.write(df)
+import random
+omikuji = ['大吉', '中吉', '小吉', '凶']
+if st.button('おみくじ'):
+    o = random.choice(omikuji)
+    st.write(o)
