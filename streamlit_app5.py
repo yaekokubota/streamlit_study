@@ -1,6 +1,13 @@
 import streamlit as st
-import random
-omikuji = ['大吉', '中吉', '小吉', '凶']
-if st.button('おみくじ'):
-    o = random.choice(omikuji)
-    st.write(o)
+b0 = st.button('松')
+b1 = st.button('竹')
+b2 = st.button('梅')
+# st.write('コースを選んでください')
+if b0:
+    st.write('2500円')
+elif b1:
+    st.write('2000円')
+elif b2:
+    st.write('1500円')
+else:
+    st.write('コースを選んでください')
